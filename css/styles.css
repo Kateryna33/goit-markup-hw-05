@@ -635,11 +635,9 @@ padding-left: 16px;
 /*------------MODAL WINDOW----------*/
 
 .backdrop.is-hidden {
-
 visibility: hidden;
 pointer-events: none;
 opacity: 0;
-
 }
 
 
@@ -656,9 +654,9 @@ display: block;
 justify-content: center;
 align-items: center;
 transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
-
+/* transition-property: transform;
 transition-duration: 500ms, 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .modal {
@@ -670,11 +668,17 @@ transition: transform 500ms linear 250ms, opacity 800ms linear;
 width: 408px;
 height: 576px;
 background: #FCFCFC;
+transition-property: transform;
+transition-duration: 500ms, 250ms;
+transition-timing-function: linear;
+
 } 
 
-.modal {
-transform: rotate(-65deg);
-animation: rotateY(500ms);
+.modal:hover {
+transform: rotate(45deg);
+border-radius: 0;
+
+
 }
 
 
