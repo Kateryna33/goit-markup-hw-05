@@ -254,6 +254,7 @@ justify-content: center;
 background-color: var(--light-color);
 padding-top: 24px;
 padding-bottom: 24px;
+margin-bottom: 8px;
 }
 
 .title {
@@ -582,16 +583,15 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 } 
 
-.menu-shadow:hover .overlay 
- {
+.menu-picture-list:hover .overlay,
+.menu-picture-list:focus .overlay {
 transform: translate(0, 0);
-
 }
+
 
 .overlay-pic {
 position: relative;
 overflow: hidden;
-
 }
 
 .overlay {
