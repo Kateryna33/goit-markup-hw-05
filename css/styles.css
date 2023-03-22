@@ -676,7 +676,7 @@ opacity: 1;
 } 
 
 .is-hidden>.modal {
-transform: translate(-50%, -50%) rotate(360deg) scale(0);
+transform: translate(-50%, -50%) rotate(180deg) scale(0);
 }
 
 .modal-close {
